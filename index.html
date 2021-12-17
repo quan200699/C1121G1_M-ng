@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let fruits = ["apple", "mango", "kiwi", "orange"];
+    let fruit = prompt("Nhập hoa quả bạn cần tìm");
+    let isFound = false;
+    for (let i = 0;i< fruits.length;i++){
+        if (fruits[i] === fruit){
+            isFound = true;
+            break;
+        }
+    }
+    if (isFound === true){
+        alert("Có")
+    }else {
+        alert("Không có")
+    }
+
+    // document.write("Mảng ban đầu <br>")
+    // for (let fruit of fruits){
+    //     document.write(fruit +"<br>")
+    // }
+    // fruits.push("lemon");
+    // fruits.push("banana");
+    // document.write("Mảng sau khi thêm <br>")
+    // for (let i = 0; i< fruits.length;i++){
+    //     document.write(fruits[i] +"<br>")
+    // }
+    // fruits.shift();
+    // fruits.unshift("coconut");
+    // document.write(fruits);
+</script>
+</body>
+</html>
